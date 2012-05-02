@@ -12,12 +12,12 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.name = "blm"
-  gem.homepage = "http://github.com/robertmay/blm"
+  gem.homepage = "http://github.com/corewebdesign/blm"
   gem.license = "MIT"
   gem.summary = %Q{A parser for the Rightmove .blm format}
   gem.description = %Q{Hurrah! Another pointless text format to parse.}
   gem.email = "robotmay@gmail.com"
-  gem.authors = ["Robert May"]
+  gem.authors = ["Core", "Robert May"]
   gem.files.exclude "spec"
 end
 Jeweler::RubygemsDotOrgTasks.new
