@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
     "spec/blm_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = "http://github.com/robertmay/blm"
+  s.homepage = "http://github.com/corewebdesign/blm"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
