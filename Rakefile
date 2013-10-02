@@ -16,8 +16,8 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = %Q{A parser for the Rightmove .blm format}
   gem.description = %Q{Hurrah! Another pointless text format to parse.}
-  gem.email = "robotmay@gmail.com"
-  gem.authors = ["Core", "Robert May"]
+  gem.email = "developers@core-webdesign.co.uk"
+  gem.authors = ["Core", "Chris Edwards"]
   gem.files.exclude "spec"
 end
 Jeweler::RubygemsDotOrgTasks.new

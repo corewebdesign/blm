@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = "blm"
-  s.version = "1.0.3"
+  s.version = "1.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Core", "Robert May"]
-  s.date = "2012-05-02"
+  s.authors = ["Core", "Chris Edwards"]
+  s.date = "2013-10-02"
   s.description = "Hurrah! Another pointless text format to parse."
-  s.email = "robotmay@gmail.com"
+  s.email = "developers@core-webdesign.co.uk"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.textile"
@@ -34,28 +34,31 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/corewebdesign/blm"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "2.0.3"
   s.summary = "A parser for the Rightmove .blm format"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 3
+    s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<htmlentities>, [">= 4.3.1"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<bundler>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, [">= 1.8.3"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<simplecov>, [">= 0"])
     else
+      s.add_dependency(%q<htmlentities>, [">= 4.3.1"])
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<bundler>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 1.8.3"])
-      s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<simplecov>, [">= 0"])
     end
   else
+    s.add_dependency(%q<htmlentities>, [">= 4.3.1"])
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<bundler>, [">= 0"])
     s.add_dependency(%q<jeweler>, [">= 1.8.3"])
-    s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<simplecov>, [">= 0"])
   end
 end
 
