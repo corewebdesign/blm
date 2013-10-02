@@ -37,7 +37,7 @@ module BLM
 			return @data if defined?(@data)
 
 			@data = []
-			get_contents(@source, "#DATA#", "#").split(header[:eor]).each do |line|
+			get_contents(@source, "#DATA#", "#END#").split(header[:eor]).each do |line|
 				entry = {}
 				line.split(header[:eof]).each_with_index do |field, index|
 					entry[definition[index].to_sym] = field.strip
